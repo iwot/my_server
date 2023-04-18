@@ -1,0 +1,15 @@
+[package]
+name = "static_server"
+version = "0.1.0"
+authors = ["iwot <iwmt@outlook.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[target.x86_64-unknown-linux-musl]
+linker = "rust-lld"
+# linker = "x86_64-unknown-linux-musl"
+
+[dependencies]
+clap = {version = "4.2", features = ["derive"]}
+chrono = "0.4"
